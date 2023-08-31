@@ -1,0 +1,123 @@
+###Register user
+POST http://localhost:4700/user/register
+Content-Type: application/json 
+
+{
+   "userName":"AbdulRaheem Munyiri",
+   "userPhone":"0741712131",
+   "userEmail":"davidmwangi123@outlook.com",
+   "userPassword":"12345678",
+   "profilePic":"https://this.image"
+   
+   
+}
+
+
+###LOGIN USER 
+POST http://localhost:4700/user/login
+Content-Type: application/json 
+
+{
+   "userEmail":"samido@gmail.com",
+   "userPassword":"12345678"
+}
+
+
+
+###Update user details, You use user Details to update his details
+PUT http://localhost:4700/user/update/
+Content-Type: application/json 
+
+{
+   "userName":"John wachira",
+   "userPhone":"887876632",
+   "userEmail":"abdulahi@gmail.com",
+   "userPassword":"12345678"
+}
+
+###Add product
+POST http://localhost:4700/product/add 
+Content-Type: application/json 
+
+{
+    "productName":"JBL Woofer",
+    "productDescription":"A 50V heater",
+    "productClassification":"systems",
+    "productCategory":"Cars",
+    "productCost":"27000",
+    "earlyCost":"28000",
+    "productImg":"https://tv"
+}
+
+
+
+###Update product ,YOU use productId to update its details
+PUT http://localhost:4700/product/update/a76536d0-365e-4c0a-b087-23c4b2de482b
+Content-Type: application/json 
+
+{
+    "productName":"Black Mamba",
+    "productDescription":"A Kabras product",
+    "productClassification":"Groceries",
+    "productCategory":"Shoes",
+    "productCost":"520",
+    "earlyCost":"570",
+    "productImg":"http://res.cloudinary.com/dkgtf3hhj/image/upload/v1692984617/nlzi4cmqqicvoiz2bt7o.jpg"
+}
+
+
+###view One product
+GET http://localhost:4700/product/viewOneProduct/ 
+
+
+###VIEW ALL Products
+GET http://localhost:4700/product/allProducts/Shoes
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+###delete product
+DELETE http://localhost:4700/product/delete/ccf-8086-4189-a34a-be07d93c181d 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+
+ 
+###ADD PRODUCT TO CART 
+POST http://localhost:4700/cart/add 
+Content-Type: application/json 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+{
+   
+}
+
+
+###VIEW CART , You use UserId to view Cart
+GET http://localhost:4700/cart/viewCart/b26f14df-7537-44d6-a29f-47ec6992ed49 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+
+###ClearAll Product from cart, You use UserId clear all cart
+DELETE http://localhost:4700/cart/deleteAll/dbdefa10-9141-454f-b4f8-8c527c1ec361 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+###Remove one item from the cart ,You use productId to remove one item from the cart
+DELETE http://localhost:4700/cart/removeOne/ 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFiZHVsUmFoZWVtIE13YW5naSIsInVzZXJFbWFpbCI6ImRhdmlkbXdhbmdpQG91dGxvb2suY29tIiwidXNlclBob25lIjo5LCJpYXQiOjE2OTMyMzA3MzAsImV4cCI6MTY5MzU5MDczMH0.dCFKyCnp-zDivnGWLTDKxchTY7koDi5IGhR2xEKkDPM
+
+
+###reset password request
+POST http://localhost:4700/reset/reset-password
+Content-Type: application/json 
+
+{
+   "userEmail":"davidmunyiri2019@outlook.com"
+}
+
+
+
+###reseting using token
+POST http://localhost:4700/reset/reset-password/A7EE72
+Content-Type: application/json 
+
+{
+   "newPassword":"12345678"
+}

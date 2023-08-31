@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.section{
+width: 100%;
+height: 100%;
+}
+.navbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(58, 168, 58);
+}
+.logo h1{
+    color: white;
+}
+.cart{
+    width: 5%;
+    height: 70%;
+    cursor: pointer;
+}
+
+.profile{
+    width: 5%;
+    height: 70%;
+    cursor: pointer;
+
+}
+.navbar input{
+    height: 60%;
+    border-radius: 10px;
+    width: 40vw;
+    margin-right: 10vw;
+    border: none;
+    outline: none;
+}
+.main{
+    width:98vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.leftbar{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(163, 231, 163);
+    
+}
+.leftbar h1{
+    color: white;
+}
+.rightbar{
+    
+    width: 80%;
+    height: 100%;
+    background: rgb(199, 223, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.category{
+    width: 85%;
+    height: 10%;
+    
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: green;
+}
+.rightbar .top{
+    width: 98%;
+    height: 48%;
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px aliceblue;
+}
+.rightbar .bottom{
+    width: 100%;
+    height: 50%;
+    background: white;  
+    display: flex;
+}
+.rightbar h5{
+    color: green;
+    padding: 5px;
+}
+.create{
+    margin: auto;
+    width: 40vw;
+    height: 100%;
+    
+}
+.addProduct{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow:0 0 10px green ;
+    border-radius: 20px;
+
+}
+.addProduct input{
+    width: 70%;
+    height: 7%;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.addProduct button{
+    width: 40%;
+    height: 7%;
+    color: white;
+    border: none;
+    background: green;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.resMessage{
+    height: 5%;
+    color: green;
+    opacity: 0;
+}
+.adminP{
+    width: 70px;
+    height: 70px;
+}
+.view{
+    width:60vw;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: green;
+    gap: 10PX;
+}
+.view div1{
+    width:60vw;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: green;
+    gap: 10px;
+}
+.pDiv{
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    box-shadow:0 0 10px green ;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.pDiv .edit{
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+}
+.pDiv p{
+    color: rgb(4, 83, 11);
+}
+.pDiv h5{
+    color: rgb(228, 135, 151);
+    text-decoration: line-through;
+}
+.pDiv .deleteP{
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .main{
+        flex-direction: column;
+    }
+    
+    .right{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .leftbar{
+        display:none;
+    }
+    .view{
+        margin: auto;
+        width: 100%;
+        height: 50%;
+        padding: auto;
+
+    }
+    .logo{
+        display: none;
+    }
+    .create{
+        margin: auto;
+        width: 100%;
+        height: 400px;
+    }
+    .pDiv{
+        margin-left:auto;
+        margin-right: auto;
+    
+    }
+}
+.logout{
+    color: white;
+    cursor: pointer;
+}

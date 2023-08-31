@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Shoppie</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/hambager.css">
+</head>
+<body>
+    <section class="section">
+        <div class="navbar">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <li>DM Shopie</li>
+                    <li><div class="category" id="shoes">
+                        <iconify-icon icon="game-icons:sonic-shoes" style="color: white;" width="35" height="25"></iconify-icon>
+                        <h6>Shoes</h6></div></li>
+                    <li> <div class="category" id="jackets">
+                        <iconify-icon icon="game-icons:sleeveless-jacket" style="color: white;" width="25" height="25"></iconify-icon>
+                        <h6>Jackets</h6>
+                    </div></li>
+                    
+                    <li>
+                        <div class="category" id="shirts">
+                            <iconify-icon icon="noto:t-shirt" style="color: white;" width="25" height="25"></iconify-icon>
+                            <h6>Shirts</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category" id="watches">
+                            <iconify-icon icon="icon-park-twotone:digital-watches" style="color: white;" width="35" height="25"></iconify-icon>
+                            <h6>Watches</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category" id="jewellery">
+                            <iconify-icon icon="mdi:jewel" style="color: white;" width="35" height="25"></iconify-icon>
+                            <h6>Jewellery</h6>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <div class="logo"><h1>DW Shoppie</h1></div>
+            <input type="search" placeholder="search" class="search">
+            <div class="cart"><p class="itemsin"></p><iconify-icon icon="bi:cart-plus-fill" style="color: white;" width="30" height="30"></iconify-icon></div>
+            <div class="profile"><img src="" alt="" class="profilePic"></div>
+            <div class="logout"><p></p><iconify-icon icon="uiw:logout" style="color: white;" width="20" height="20"></iconify-icon></div>
+        </div>
+        <div class="main">
+            <div class="leftbar">
+                <h1>Categories</h1>
+                <div class="category" id="shoes">
+                <iconify-icon icon="game-icons:sonic-shoes" style="color: white;" width="35" height="25"></iconify-icon>
+                <h6>Shoes</h6></div>
+                <div class="category" id="jackets">
+                    <iconify-icon icon="game-icons:sleeveless-jacket" style="color: white;" width="25" height="25"></iconify-icon>
+                    <h6>Jackets</h6>
+                </div>
+                <div class="category" id="shirts">
+                    <iconify-icon icon="noto:t-shirt" style="color: white;" width="25" height="25"></iconify-icon>
+                    <h6>Shirts</h6>
+                </div>
+                <div class="category" id="watches">
+                    <iconify-icon icon="icon-park-twotone:digital-watches" style="color: white;" width="35" height="25"></iconify-icon>
+                    <h6>Watches</h6>
+                </div>
+                <div class="category" id="jewellery">
+                    <iconify-icon icon="mdi:jewel" style="color: white;" width="35" height="25"></iconify-icon>
+                    <h6>Jewellery</h6>
+                </div>
+            </div>
+            <div class="rightbar">
+               
+                <div class="bottom"></div>
+            </div>
+        </div>
+    </section>
+   <script src="index.js"></script> 
+</body>
+</html>

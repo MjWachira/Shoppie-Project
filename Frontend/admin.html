@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Admin DW Shoppie</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <section class="section">
+        <div class="navbar">
+            <div class="logo"><h1>DW Shoppie</h1></div>
+            <input type="search" placeholder="search" style="padding: 5px;">
+                <div class="profile"><iconify-icon icon="clarity:avatar-line" style="color: white;" width="23px" height="23px"></iconify-icon></div>
+                <div class="logout"><p></p><iconify-icon class="logouti" icon="uiw:logout" style="color: white;" width="20px" height="20px"></iconify-icon></div>
+        </div>
+        <div class="main">
+                <div class="create">
+                    <h5 class="resMessage"></h5>
+                    <form action="" class="addProduct">
+                        <h3>Add A Product</h3>
+                            <input type="text" name="pname" class="productName" placeholder="product Name">
+                            <select name="categories" class="select" id="productCategory">
+                                <option value="Shoes">Shoes</option>
+                                <option value="Jackets">Jackets</option>
+                                <option value="Shirts">Shirts</option>
+                                <option value="Watches">Watches</option>
+                                <option value="Jewellery">Jewellery</option>
+                            </select>
+                            <input type="file" class="productImg" placeholder="product image" accept="image/*">
+                            <input type="number" class="productCost" placeholder="product cost">
+                            <input type="number" class="earlyCost" placeholder="was cost">
+                            <input type="text" class="productDescription" placeholder="product description">
+                            <input type="text" placeholder="classification" class="productClassification">
+                            <button class="addP">Add Product</button>
+                    </form>
+                </div>
+                <div class="view">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(247, 252, 248);
+    margin-left: 170px;
+    height: 78vh;
+    padding: 10px;
+    width: 80vw;
+    
+}
+.box-cart{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(221, 245, 222);
+    border-radius: 10px;
+    padding: 15px;
+}
+.item-btn{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+.item-btn button{
+    height: 22px;
+    
+}
+.checkout{
+    display: flex;
+    flex-direction: row;
+    margin-left: 165px;
+    position: fixed;
+    width: 80vw;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(221, 245, 222);
+    border-radius: 10px;
+    padding: 15px;
+    padding: auto;
+    padding: auto;
+}
+.checkout button{
+    height: 26px;
+    padding: 5px;
+    width: 200px;
+    color: white;
+    background-color: rgb(20, 163, 20);
+    border-radius: 5px;
+    border: none;
+
+}
